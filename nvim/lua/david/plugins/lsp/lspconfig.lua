@@ -71,7 +71,6 @@ return {
 		lspconfig["html"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
-			filetypes = { "html", "svelte" },
 		})
 
 		-- configure typescript server

@@ -1,5 +1,6 @@
 -- Line numbers
 vim.o.number = true
+vim.o.relativenumber = true
 
 -- Set <leader> key to SPACE
 vim.g.mapleader = " "
