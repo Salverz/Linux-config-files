@@ -20,7 +20,8 @@ return {
 				"svelte",
 				"lua_ls",
 				"tsserver",
-				"sqlls"
+				"sqlls",
+				"omnisharp",
 			},
 			-- auto install configured servers (with lspconfig)
 			automatic_installation = true,

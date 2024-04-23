@@ -91,5 +91,17 @@ return {
 			capabilities = capabilities,
 			on_attach = on_attach,
 		})
+
+		-- configure c# server
+		-- local path_to_download = "/home/david/nvim"
+		lspconfig["omnisharp"].setup({
+			cmd = {
+				"mono",
+				"--assembly-loader=strict",
+				"~/.config/nvim/lua/david/plugins/lsp/omnisharp/OmniSharp.exe"
+			},
+			on_attach = on_attach,
+			use_mono = true,
+		})
 	end,
 }
